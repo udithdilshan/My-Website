@@ -1,0 +1,1309 @@
+@media only screen and (max-width: 375px) {
+    /*===========front shape============*/
+    #img-round {
+        width: 80%;
+    }
+
+    #front-shape {
+        height: 100px;
+        left: 20%;
+        top: 15%;
+    }
+
+    .front-text {
+        left: 10%;
+        top: 22%;
+        line-height: 1;
+    }
+
+    .front-text h3 {
+        font-size: 0.4rem;
+    }
+
+    /*====I,m====*/
+    .front-text h3 span {
+        font-size: 0.6rem;
+    }
+
+    /*udith dilshan*/
+    .front-text h1 {
+        font-size: 1.2rem;
+        text-shadow: 1px 1px #e0ebe8;
+    }
+
+    /*all span*/
+    span {
+        font-size: 0.3rem;
+    }
+
+    .front-text h2 {
+        margin-top: 2%;
+        font-size: 0.75rem;
+    }
+
+    /*===========nav============*/
+    #header {
+        padding: 15px 0;
+    }
+
+    #menu ul li a {
+        font-size: 1.2rem;
+        padding: 0 0.5rem 0;
+        margin: 0 0.5rem 0;
+
+    }
+
+    /*=============profile=============*/
+    #profile {
+        padding: 20% 0 5% 0;
+    }
+
+    #profile .container img {
+        width: 50%;
+    }
+
+    #profile .container h1 {
+        font-size: 1.5rem;
+    }
+
+    #intro {
+        width: 70%;
+        letter-spacing: 0.09rem;
+        font-size: 0.9rem;
+    }
+
+    /*=============hr=============*/
+    hr {
+        width: 20%;
+        border-bottom-width: 0.5rem;
+    }
+
+    #skills .container h1 {
+        font-size: 2rem;
+    }
+
+    /*=============design=============*/
+    #design {
+        margin: auto;
+        text-align: center;
+
+    }
+
+    #design img {
+        width: 40%;;
+        float: none;
+    }
+
+    #design div {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #design div h3 {
+        margin: 2% 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #design div p {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /*=============develop=============*/
+    #develop {
+        height: auto;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    #develop img {
+        width: 40%;;
+        float: none;
+    }
+
+    #develop div {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #develop div h3 {
+        margin: 2% 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #develop div p {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /*=============experience=============*/
+    #experience {
+        height: auto;
+        margin: 5% auto 5%;
+    }
+
+    #experience img {
+        width: 40%;;
+        float: none;
+    }
+
+    #experience h3 {
+        margin: 2% 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #experience div p {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .set-1 {
+        margin: 10% 0 0 5%;
+        float: none;
+        width: 85%;
+    }
+
+    .set-2 {
+        float: none;
+        width: 85%;
+    }
+
+    .lang {
+        font-size: 0.3rem;
+        text-align: left;
+    }
+
+    .scale {
+        margin-top: 2%;
+        width: 100%;
+        height: 10px;
+    }
+
+    /*=============work=============*/
+    #work {
+        height: 620px;
+        margin: 0 0 10%;
+        padding-top: 20%;
+    }
+
+    #work h1 {
+        font-size: 2rem;
+        width: 80%;
+        margin: 0 0 0 10%;
+    }
+
+    #work p {
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    /*=============work Grid=============*/
+    #grid-container {
+        grid-template-columns: 100%;
+        padding: 0 8% 0 8%;
+    }
+
+    .details {
+        font-size: 0.8rem;
+        opacity: 0.8;
+    }
+
+    /*=============Contact me=============*/
+    #contact-me {
+        padding-top: 25%;
+    }
+    #contact-me h1 {
+        font-size: 2rem;
+    }
+
+    #contact-me p {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    /*=============Contact form=============*/
+    #contact-form {
+        height: 350px;
+    }
+
+    #contact-form label {
+        font-size: 0.9rem;
+    }
+
+    #f-name {
+        width: 95%;
+    }
+
+    #email {
+        width: 95%;
+    }
+
+    #subject {
+        width: 95%;
+    }
+
+    #submit {
+        overflow: inherit;
+        width: 45%;
+    }
+
+    /*=============Footer=============*/
+    #links {
+        /*padding-left: 20%;*/
+    }
+
+    #links a img {
+        width: 10%;
+    }
+
+    #copy p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    /*=============profile=============*/
+    #profile {
+        padding: 20% 0 5% 0;
+    }
+
+    /*=============Contact form=============*/
+    #f-name {
+        width: 95%;
+    }
+
+    #email {
+        width: 95%;
+    }
+
+    #subject {
+        width: 95%;
+    }
+
+    #submit {
+        overflow: inherit;
+        width: 45%;
+    }
+
+    .details {
+        font-size: 0.8rem;
+        opacity: 0.8;
+    }
+    /*=============Footer=============*/
+    #links a img {
+        width: 8%;
+    }
+
+    #copy p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 521px) and (max-width: 680px) {
+    /*===========front shape============*/
+    #img-round {
+        width: 140%;
+    }
+
+    #front-shape {
+        top: 15%;
+        height: auto;
+        left: 25%;
+
+    }
+
+    .front-text {
+        left: 6%;
+        top: 15%;
+    }
+
+    .front-text h3 {
+        font-size: 0.6rem;
+
+    }
+
+    /*====I,m====*/
+    .front-text h3 span {
+        font-size: 1.4rem;
+    }
+
+    /*udith dilshan*/
+    .front-text h1 {
+        font-size: 2.2rem;
+        text-shadow: 1px 1px #e0ebe8;
+    }
+
+    /*all span*/
+    span {
+        font-size: 0.5rem;
+    }
+
+    .front-text h2 {
+        font-size: 1.2rem;
+    }
+
+    /*=============profile=============*/
+    #profile .container img {
+        width: 45%;
+    }
+
+    #profile .container h1 {
+        font-size: 2.5rem;
+    }
+
+    #intro {
+        width: 79%;
+        letter-spacing: 0.09rem;
+        font-size: 1.2rem;
+    }
+
+    /*=============hr=============*/
+
+    hr {
+        width: 9%;
+        border-bottom-width: 0.4rem;
+
+    }
+
+    /*=============skills=============*/
+    #skills .container h1 {
+        font-size: 2rem;
+    }
+
+
+    /*=============design=============*/
+    #design {
+        margin: 8% 2% 0;
+        width: fit-content;
+        height: 200px;
+        text-align: center;
+    }
+
+    #design img {
+        width: 35%;
+        border-width: 4px;
+    }
+
+    #design div {
+        line-height: 2;
+        float: none;
+        padding: 1% 0 0;
+    }
+
+    #design div h3 {
+        font-size: 2rem;
+    }
+
+    #design div p {
+        font-size: 1.2rem;
+    }
+
+    /*=============develop=============*/
+    #develop {
+        margin: 10% 2% 0;
+        height: 180px;
+
+    }
+
+    #develop img {
+        width: 35%;
+        margin-top: 3%;
+        border-width: 4px;
+    }
+
+    #develop div h3 {
+        font-size: 2rem;
+
+    }
+
+    #develop div p {
+        font-size: 1.2rem;
+    }
+    /*=============experience=============*/
+    #experience {
+        margin: 10% 0 5%;
+    }
+
+    #experience h3 {
+        font-size: 2rem;
+    }
+
+    .lang {
+        font-size: 0.9rem;
+    }
+
+    .scale {
+        height: 12px;
+        box-shadow: 0.08rem 0.08rem #071a52;
+    }
+
+    /*=============work=============*/
+    #work h1 {
+        font-size: 2.5rem;
+    }
+
+    #work p {
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    /*=============work Grid=============*/
+    #grid-container {
+        grid-template-columns: 80%;
+        grid-gap: 0;
+    }
+
+    .grid-item {
+        margin: 0 0 10% 15%;
+    }
+
+    .details {
+        font-size: 1.5rem;
+        opacity: 0.8;
+    }
+    /*=============Contact me=============*/
+    #contact-me h1 {
+        font-size: 2.5rem;
+    }
+
+    #contact-me p {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+
+    /*=============Contact form=============*/
+    #contact-form label {
+        font-size: 1rem;
+    }
+
+    #f-name {
+        width: 95%;
+    }
+
+    #email {
+        width: 95%;
+    }
+
+    #submit {
+        width: 40%;
+        padding: 8px;
+
+    }
+    /*=============Footer=============*/
+    footer {
+        margin: 15% 0 0 0;
+    }
+
+    #links a img {
+        width: 8%;
+        margin: 0 3%;
+    }
+
+    #links {
+        padding-left: 0;
+    }
+
+    #copy {
+        padding: 5% 0 0;
+    }
+
+    #copy p {
+        font-size: 1rem;
+        color: #e0ebe8;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 321px)and (max-width: 375px) {
+    /*===========front shape============*/
+    #img-round {
+        width: 90%;
+    }
+
+    #front-shape {
+        top: 15%;
+        height: auto;
+        left: 25%;
+
+    }
+
+    .front-text {
+        left: 5%;
+        top: 18%;
+        line-height: 1;
+    }
+
+    .front-text h3 {
+        font-size: 0.43rem;
+
+    }
+
+    /*====I,m====*/
+    .front-text h3 span {
+        font-size: 0.75rem;
+    }
+
+    /*udith dilshan*/
+    .front-text h1 {
+        font-size: 1.4rem;
+        text-shadow: 1px 1px #e0ebe8;
+    }
+
+    /*all span*/
+    span {
+        font-size: 0.5rem;
+    }
+
+    .front-text h2 {
+        font-size: 0.8rem;
+    }
+
+    /*===========nav============*/
+    #menu ul {
+    }
+
+    #menu ul li a {
+        padding: 0 0.5rem 0;
+        margin: 0 0.5rem 0;
+    }
+
+    /*=============profile=============*/
+    #profile .container img {
+        width: 55%;
+    }
+
+    #profile .container h1 {
+        font-size: 2.3rem;
+    }
+
+    #intro {
+        width: 90%;
+        font-size: 1.1rem;
+    }
+
+    /*=============hr=============*/
+    hr {
+        margin-top: 6%;
+        width: 15%;
+        border-bottom-width: 0.4rem;
+    }
+
+    #skills .container h1 {
+        font-size: 2.3rem;
+    }
+
+    /*=============skills=============*/
+    #skills .container h1 {
+        font-size: 2rem;
+    }
+
+    /*=============experience=============*/
+    #experience {
+        margin: 10% 0 5%;
+    }
+
+    /*=============work=============*/
+    #work {
+        height: auto;
+        margin: 0 0 20%;
+        padding-top: 18%;
+    }
+
+    #work h1 {
+        width: 70%;
+        margin: 0 0 0 15%;
+
+    }
+
+    /*=============work Grid=============*/
+    /*=============Contact me=============*/
+    /*=============Footer=============*/
+    #links a img {
+        margin: 0 3%;
+    }
+
+    #copy p {
+        font-size: 0.8rem;
+        color: #e0ebe8;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    /*===========front shape============*/
+    #img-round {
+        width: 100%;
+    }
+
+    #front-shape {
+        height: 100px;
+        left: 25%;
+        top: 15%;
+    }
+
+    .front-text {
+        left: 2%;
+        top: 25%;
+    }
+
+    .front-text h3 {
+        font-size: 0.5rem;
+    }
+
+    /*====I,m====*/
+    .front-text h3 span {
+        font-size: 0.8rem;
+    }
+
+    /*udith dilshan*/
+    .front-text h1 {
+        font-size: 1.6rem;
+        text-shadow: 1px 1px #e0ebe8;
+
+    }
+
+    /*all span*/
+    span {
+        font-size: 0.3rem;
+    }
+
+    .front-text h2 {
+        margin-top: 2%;
+        font-size: 0.9rem;
+    }
+
+    /*===========nav============*/
+    #header {
+        padding: 15px 0;
+    }
+
+    #menu ul li a {
+        font-size: 1.2rem;
+        margin: auto;
+    }
+
+    /*=============profile=============*/
+    #profile .container img {
+        width: 60%;
+    }
+
+    #profile .container h1 {
+        font-size: 2rem;
+    }
+
+    #intro {
+        width: 80%;
+        letter-spacing: 0.09rem;
+        font-size: 1.2rem;
+    }
+
+    /*=============hr=============*/
+    hr {
+        margin-top: 6%;
+        width: 13%;
+        border-bottom-width: 0.3rem;
+    }
+
+    /*=============skills=============*/
+    #skills .container h1 {
+        font-size: 2rem;
+    }
+
+    /*=============design=============*/
+    #design {
+        margin: 8% 2% 0;
+        width: fit-content;
+        height: 140px;
+        text-align: center;
+    }
+
+    #design img {
+        width: 35%;
+        border-width: 4px;
+    }
+
+    #design div {
+        line-height: 2;
+        margin: 0 0 0 40%;
+        float: none;
+        width: fit-content;
+        padding: 1% 0 0;
+    }
+
+    #design div h3 {
+        font-size: 1.6rem;
+    }
+
+    #design div p {
+        font-size: 1.2rem;
+    }
+
+    /*=============develop=============*/
+    #develop {
+        margin: 10% 2% 0;
+        height: 180px;
+
+    }
+
+    #develop img {
+        width: 35%;
+        margin-top: 3%;
+        border-width: 4px;
+    }
+
+    #develop div h3 {
+        font-size: 1.6rem;
+
+    }
+
+    #develop div p {
+        font-size: 1.2rem;
+    }
+
+    /*=============experience=============*/
+    #experience {
+        margin: 10% 0 5%;
+    }
+
+    #experience h3 {
+        font-size: 1.6rem;
+    }
+
+    .lang {
+        font-size: 0.9rem;
+    }
+
+    .set-1 {
+        width: 45%;
+        margin-right: 2%;
+    }
+
+    .set-2 {
+        width: 45%;
+        margin-left: 2%;
+    }
+
+    .scale {
+        height: 9px;
+        box-shadow: 0.08rem 0.08rem #071a52;
+    }
+
+    /*=============work=============*/
+    #work h1 {
+        font-size: 2rem;
+    }
+
+    #work p {
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    /*=============work Grid=============*/
+    #grid-container {
+        grid-template-columns: 80%;
+        grid-gap: 0;
+    }
+
+    .grid-item {
+        margin: 0 0 10% 15%;
+    }
+
+    .details {
+        font-size: 0.8rem;
+        opacity: 0.8;
+    }
+
+    /*=============Contact me=============*/
+    #contact-me h1 {
+        font-size: 2rem;
+    }
+
+    #contact-me p {
+        font-size: 0.8rem;
+        width: 80%;
+    }
+
+    /*=============Contact form=============*/
+    #contact-form label {
+        font-size: 0.9rem;
+    }
+
+    #f-name {
+        width: 95%;
+    }
+
+    #email {
+        width: 95%;
+    }
+
+    #submit {
+        width: 40%;
+        padding: 5px;
+
+    }
+
+    /*=============Footer=============*/
+    footer {
+        margin: 15% 0 0 0;
+    }
+
+    #links a img {
+        width: 10%;
+        margin: 0 3%;
+    }
+
+    #links {
+        padding-left: 0;
+    }
+
+    #copy {
+        padding: 2% 0 0;
+    }
+
+    #copy p {
+        font-size: 0.8rem;
+        color: #e0ebe8;
+    }
+
+}
+
+@media only screen and (min-width: 426px) and (max-width: 520px) {
+    /*===========front shape============*/
+    #img-round {
+        width: 130%;
+    }
+
+    #front-shape {
+        top: 15%;
+        height: auto;
+        left: 30%;
+    }
+
+    .front-text {
+        left: 3%;
+        top: 15%;
+        height: auto;
+    }
+
+    .front-text h3 {
+        font-size: 0.6rem;
+    }
+
+    /*====I,m====*/
+    .front-text h3 span {
+        font-size: 1rem;
+    }
+
+    /*udith dilshan*/
+    .front-text h1 {
+        font-size: 1.9rem;
+        text-shadow: 1px 1px #e0ebe8;
+    }
+
+    /*all span*/
+    span {
+        font-size: 0.6rem;
+    }
+
+    .front-text h2 {
+        font-size: 1.1rem;
+    }
+
+    /*=============profile=============*/
+    #profile .container img {
+        width: 60%;
+    }
+
+    #profile .container h1 {
+        font-size: 2.5rem;
+    }
+
+    #intro {
+        width: 90%;
+        letter-spacing: 0.09rem;
+        font-size: 1.3rem;
+    }
+
+    /*=============hr=============*/
+    hr {
+        margin-top: 6%;
+        width: 15%;
+        border-bottom-width: 0.5rem;
+    }
+
+    /*=============skills=============*/
+    #skills .container h1 {
+        font-size: 2.5rem;
+    }
+
+    /*=============design=============*/
+    #design {
+        margin: 8% 2% 0;
+        width: fit-content;
+        height: 140px;
+        text-align: center;
+    }
+
+    #develop img {
+        width: 35%;
+        margin-top: 3%;
+        border-width: 4px;
+    }
+
+    #design div h3 {
+        font-size: 1.7rem;
+    }
+
+    #design div p {
+        font-size: 1.2rem;
+    }
+
+    /*=============develop=============*/
+    #develop {
+        margin: 10% 2% 0;
+        height: 180px;
+
+    }
+
+    #develop img {
+        width: 35%;
+        margin-top: 5%;
+        border-width: 4px;
+    }
+
+    #develop div h3 {
+        font-size: 1.7rem;
+
+    }
+
+    #develop div p {
+        font-size: 1.2rem;
+    }
+
+    /*=============experience=============*/
+    #experience {
+        margin: 10% 0 5%;
+    }
+
+    #experience h3 {
+        font-size: 1.7rem;
+    }
+
+    .lang {
+        font-size: 1rem;
+    }
+
+    .scale {
+        height: 10px;
+        box-shadow: 0.08rem 0.08rem #071a52;
+    }
+
+    /*=============work=============*/
+    #work h1 {
+        font-size: 2.5rem;
+    }
+
+    #work p {
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    /*=============work Grid=============*/
+    #grid-container {
+        grid-template-columns: 80%;
+        grid-gap: 0;
+    }
+
+    .grid-item {
+        margin: 0 0 10% 15%;
+    }
+
+    .details {
+        font-size: 1.2rem;
+        opacity: 0.8;
+    }
+
+    /*=============Contact me=============*/
+    #contact-me h1 {
+        font-size: 2.5rem;
+    }
+
+    #contact-me p {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+
+    /*=============Contact form=============*/
+    #contact-form label {
+        font-size: 1rem;
+    }
+
+    #f-name {
+        width: 95%;
+    }
+
+    #email {
+        width: 95%;
+    }
+
+    #submit {
+        width: 40%;
+        padding: 5px;
+
+    }
+
+}
+
+@media only screen and (min-width: 681px)  and (max-width: 720px) {
+    #img-round {
+        width: 190%;
+    }
+
+    #front-shape {
+        height: 300px;
+        top: 15%;
+        left: 28%;
+    }
+
+    .front-text {
+        line-height: 1.3;
+        left: 4%;
+        top: 17%;
+    }
+
+    .front-text h3 {
+        line-height: 1.1;
+        font-size: 0.9rem;
+
+    }
+
+    .front-text h3 span {
+        font-size: 1.5rem;
+    }
+
+    /*udith dilshan*/
+    .front-text h1 {
+        font-size: 3rem;
+    }
+
+    /*all span*/
+    span {
+        font-size: 0.5rem;
+    }
+
+    .front-text h2 {
+        padding-top: 2%;
+        font-size: 1.2rem;
+    }
+
+    /*);*/
+    .front-text h2 span {
+        margin-top: 2%;
+        font-size: 1rem;
+    }
+
+    /*=============profile=============*/
+    #profile .container img {
+        width: 30%;
+    }
+
+    #intro {
+        width: 60%;
+        letter-spacing: 0.09rem;
+        font-size: 1.4rem;
+    }
+
+    /*=============hr=============*/
+    hr {
+        margin-top: 6%;
+        width: 10%;
+        border-bottom-width: 0.5rem;
+    }
+
+    #profile .container h1 {
+        font-size: 2.8rem;
+    }
+
+    /*=============skills=============*/
+    /*=============design=============*/
+    #design {
+        margin: 8% 10% 0;
+        height: 200px;
+    }
+
+    /*=============develop=============*/
+    #develop {
+        margin: 5% 10% 0;
+        height: 200px;
+    }
+
+    /*=============experience=============*/
+    .scale {
+        height: 12px;
+    }
+
+    .lang {
+        font-size: 1rem;
+    }
+
+    /*=============work=============*/
+    /*=============work Grid=============*/
+    #grid-container {
+        grid-template-columns: 80%;
+        height: 800px;
+        padding-left: 20%;
+    }
+
+    /*=============Contact form=============*/
+    #contact-form {
+        padding-left: 4%;
+    }
+
+    #f-name {
+        width: 95%;
+        clear: left;
+    }
+
+    #email {
+        width: 95%;
+    }
+
+    #subject {
+        width: 95%;
+    }
+
+    #message {
+        width: 95%;
+    }
+
+    #submit {
+        width: 20%;
+    }
+
+    /*=============Footer=============*/
+    #links a img {
+        width: 6%;
+    }
+
+    #copy p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 1024px) {
+    /*===========front shape============*/
+    #img-round {
+        width: 280%;
+    }
+
+    #front-shape {
+        top: 15%;
+    }
+
+    .front-text {
+        left: 8%;
+        top: 15%;
+    }
+
+    .front-text h3 {
+        font-size: 1.1rem;
+
+    }
+
+    /*====I,m====*/
+    .front-text h3 span {
+        font-size: 2.2rem;
+    }
+
+    /*udith dilshan*/
+    .front-text h1 {
+        font-size: 4rem;
+        letter-spacing: 4px;
+    }
+
+    /*all span*/
+    span {
+        font-size: 1.5rem;
+    }
+
+    .front-text h2 {
+        font-size: 2rem;
+    }
+
+    /*=============profile=============*/
+    #profile .container img {
+        width: 25%;
+    }
+
+    #intro {
+        width: 83%;
+        letter-spacing: 0.09rem;
+        font-size: 1.4rem;
+    }
+
+    /*=============skills=============*/
+    /*=============design=============*/
+    #design {
+        margin: 8% 20% 0;
+        height: 200px;
+    }
+
+    /*=============develop=============*/
+    #develop {
+        margin: 5% 20% 0;
+        height: 200px;
+    }
+
+    /*=============experience=============*/
+    .scale {
+        height: 15px;
+    }
+
+    .lang {
+        font-size: 1.1rem;
+    }
+
+    /*=============Contact form=============*/
+    #f-name {
+        width: 40%;
+        clear: left;
+    }
+
+    #email {
+        width: 40%;
+    }
+
+    #subject {
+        width: 96%;
+    }
+
+    #message {
+        width: 96%;
+    }
+
+    #submit {
+        width: 20%;
+    }
+
+    #links a img {
+        width: 4.5%;
+    }
+
+    #copy p {
+        font-size: 1rem;
+    }
+
+}
