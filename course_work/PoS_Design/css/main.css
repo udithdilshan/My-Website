@@ -1,0 +1,47 @@
+#add-customer{
+  width: fit-content;
+  padding: 2.5%;
+}
+
+.arrow-remove{
+  padding: 3px !important;
+}
+.arrow-remove::-webkit-outer-spin-button, .arrow-remove::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+.margin1{
+  margin-left:-15px;
+  margin-right:-15px;
+}
+#cancel-order{
+
+}
+#order_payment{
+  position: absolute;
+  right: 0;
+}
+.overflow{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.overflow::-webkit-scrollbar{
+  height: 8px;
+}
+.overflow::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: #818182;
+}
+.category{
+  display: inline-block;
+}
+#form{
+  width: 100%;
+}
+#search{
+  width: 80%;
+}
+.product{
+  width: 100%;
+}

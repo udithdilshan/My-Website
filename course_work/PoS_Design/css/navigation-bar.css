@@ -1,0 +1,29 @@
+#logo{
+    width: 100%;
+}
+.navbar-brand{
+    width: 5%;
+}
+.nav_font{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+header > nav > ul > li{
+    padding: 5px;
+}
+.nav_font > li > a > i{
+    padding-right: 0.8rem;
+}
+.dropdown > div > a > i{
+    padding-right: 0.8rem;
+}
+@media only screen and (min-width: 200px) and (max-width: 560px) {
+    .navbar-brand{
+        width: 12%;
+    }
+}
+@media only screen and (min-width: 561px) and (max-width: 1024px) {
+    .navbar-brand{
+        width: 7%;
+    }
+}

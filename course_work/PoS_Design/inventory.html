@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PoS Inventory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0e2ab26231.js" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" sizes="64x64" href="img/pos-terminal.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navigation-bar.css">
+
+</head>
+<body>
+
+<header class="navbar navbar-expand-md bg-light navbar-light">
+    <a class="navbar-brand ml-5" href="pos.html"><img id="logo" src="img/pos-terminal.svg" alt=""></a>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#menu"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <nav class="ml-auto colllapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ml-auto mr-5 nav_font">
+            <li class="nav-item">
+                <a class="nav-link " href="pos.html"><i class="fas fa-tachometer-alt"></i>POS</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="people-dropdown" data-toggle="dropdown"><i
+                        class="fas fa-users"></i>People</a>
+                <div class="dropdown-menu bg-light nav_font" aria-labelledby="people-dropdown">
+                    <a class="dropdown-item " href="customer.html"><i class="fas fa-user-alt"></i>Customer</a>
+                    <a class="dropdown-item " href="supplier.html"><i class="fas fa-truck-moving"></i>Supplier</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="inventory.html"><i class="fas fa-warehouse"></i>Inventory</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sales.html"><i class="far fa-money-bill-alt"></i></i>Sales</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="report.html"><i class="fas fa-chart-line"></i>Report</a>
+            </li>
+            <li class="nav-item ml-md-5">
+                <a class="nav-link" href="user.html"><i class="fas fa-user-circle"></i>User</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-sign-out-alt"></i></a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container-fluid col-11 mt-4">
+
+    <div class="container-fluid">
+        <h3 class="">Inventory Form</h3>
+
+    </div>
+    <form action="#" class="mt-5">
+        <div class="col-md-6 p-0">
+            <label for="code">Item Code</label>
+            <input type="text" class="form-control" id="code" aria-describedby="Item Code">
+        </div>
+        <div class="form-group">
+            <label for="name">Item Name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="Name">
+            <label for="description">Description</label>
+            <input type="text" class="form-control" id="description" aria-describedby="Description">
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select class="form-control" id="category">
+                    <option>Select Category</option>
+                    <option>Computer & Accessories</option>
+                    <option>Cell Phone & Accessories</option>
+                    <option>Food</option>
+                    <option>Gift</option>
+                    <option>School Stationery</option>
+                    <option>Toys</option>
+                    <option>Other</option>
+                </select>
+                <label for="supplier">Supplier</label>
+                <select class="form-control" id="supplier">
+                    <option>Select Supplier</option>
+                    <option>S001 - Udith Dilshan</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md">
+                    <label for="purchasePrice">Purchased Price (Rs)</label>
+                    <input type="number" class="arrow-remove-form form-control" id="purchasePrice"
+                           aria-describedby="Purchase Price">
+                </div>
+                <div class="col-md">
+                    <label for="tax">Tax (%)</label>
+                    <input type="number" class="form-control" id="tax" aria-describedby="Tax" placeholder="N/A">
+                </div>
+            </div>
+
+        </div>
+        <div class="row p-0">
+            <div class="col-md">
+                <label for="mfd">Manufactured Date (MFD)</label>
+                <input type="date" class="form-control" placeholder="N/A" id="mfd"
+                       aria-describedby="MFD">
+            </div>
+            <div class="col-md">
+                <label for="exp">Expiration Date (EXP)</label>
+                <input type="date" class="form-control" placeholder="N/A" id="exp"
+                       aria-describedby="EXP">
+            </div>
+            <div class="col-md">
+                <label for="batch_code">Batch-Code</label>
+                <input type="text" class="form-control" placeholder="N/A"
+                       id="batch_code"
+                       aria-describedby="Batch-Code">
+            </div>
+
+        </div>
+        <div class="row p-0">
+            <div class="col-md">
+                <label for="qty">Quantity</label>
+                <input type="number" class="form-control" placeholder="N/A"
+                       id="qty"
+                       aria-describedby="Quantity">
+            </div>
+            <div class="col-md">
+                <label for="aleart_qty">Alert Quantity</label>
+                <input type="number" class="form-control" placeholder="N/A" id="aleart_qty"
+                       aria-describedby="Alert Quantity">
+            </div>
+            <div class="col-md">
+                <label for="discount">Discount</label>
+                <input type="number" class="arrow-remove-form form-control" placeholder="N/A"
+                       id="discount"
+                       aria-describedby="Discount">
+            </div>
+        </div>
+        <div class="row p-0">
+            <div class="col-md">
+                <label for="finalprice">Final Price with out Discount</label>
+                <input type="number" class="form-control" placeholder="N/A"
+                       id="finalprice"
+                       aria-describedby="Final Price with out Discount">
+                <small id="finalpricewithdiscount" class="form-text text-muted">Final with Discount will be N/A</small>
+            </div>
+            <div class="col-md">
+                <label for="pic">Product Pic</label>
+                <input type="file" class="form-control" id="pic"
+                       aria-describedby="Product Pic">
+            </div>
+        </div>
+        <div class="d-flex flex-row mt-4 ">
+            <input type="button" class="btn btn-danger" value="Clear All">
+            <input type="button" class="ml-auto btn btn-success" value="Save Product">
+        </div>
+    </form>
+</div>
+<nav class="navbar mt-5">
+    <form class="form-inline row ml-auto mr-5">
+        <input class="form-control mr-lg-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</nav>
+<div class="text-secondary row mt-4 p-0">
+    <span class="ml-5">Show</span>
+    <span>
+        <select name="rows" class="text-secondary" id="row-count">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+    </span>
+    <span>entries</span>
+    <div class="col-md-6 row ml-auto mt-4 p-0">
+        <div class="col">
+            <select class="form-control" id="select_supplier">
+                <option>Select Supplier</option>
+                <option>S001 - Udith Dilshan</option>
+            </select>
+        </div>
+        <div class="col p-0">
+            <select class="form-control" id="select_category">
+                <option>Select Category</option>
+                <option>Computer & Accessories</option>
+                <option>Cell Phone & Accessories</option>
+                <option>Food</option>
+                <option>Gift</option>
+                <option>School Stationery</option>
+                <option>Toys</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="col">
+            <button class="btn-sm btn-primary">Apply Filter</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt-5">
+    <table class="table table-striped table-light table-hover table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Item Code</th>
+            <th scope="col">Item Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Category</th>
+            <th scope="col">Supplier</th>
+            <th scope="col">Price (Rs)</th>
+            <th scope="col">Tax (%)</th>
+            <th scope="col">Discount (%)</th>
+            <th scope="col">QTY On Hand</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>I001</td>
+            <td>Product 01</td>
+            <td>Product 01 Description</td>
+            <td>Other</td>
+            <td>Udith Dilshan</td>
+            <td>$$$$$</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N</td>
+            <td class="pl-1 pr-1">
+                <div class="p-0 m-0">
+                    <span class="btn btn-sm btn-info"><i class="fas fa-file-alt"></i></span>
+                    <span class="btn btn-sm btn-success"><i class="fas fa fa-pencil"></i></span>
+                    <span class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></span>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+</div>
+<nav class="row m-3" aria-label="Page navigation example">
+    <span class="ml-3">Showing 1 to N entries</span>
+    <span class="ml-auto mr-3">
+    <ul class="pagination ">
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+</span>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

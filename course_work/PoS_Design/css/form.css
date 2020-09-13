@@ -1,0 +1,4 @@
+.arrow-remove-form::-webkit-outer-spin-button, .arrow-remove-form::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}

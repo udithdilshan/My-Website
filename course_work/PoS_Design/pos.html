@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PoS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0e2ab26231.js" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" sizes="64x64" href="img/pos-terminal.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navigation-bar.css">
+</head>
+
+<body>
+
+<header class="navbar navbar-expand-md bg-light navbar-light">
+    <a class="navbar-brand ml-5" href="pos.html"><img id="logo" src="img/pos-terminal.svg" alt=""></a>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#menu"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <nav class="ml-auto colllapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ml-auto mr-5 nav_font">
+            <li class="nav-item">
+                <a class="nav-link active" href="pos.html"><i class="fas fa-tachometer-alt"></i>POS</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="people-dropdown" data-toggle="dropdown"><i
+                        class="fas fa-users"></i>People</a>
+                <div class="dropdown-menu bg-light nav_font" aria-labelledby="people-dropdown">
+                    <a class="dropdown-item " href="customer.html"><i class="fas fa-user-alt"></i>Customer</a>
+                    <a class="dropdown-item " href="supplier.html"><i class="fas fa-truck-moving"></i>Supplier</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="inventory.html"><i class="fas fa-warehouse"></i>Inventory</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sales.html"><i class="far fa-money-bill-alt"></i></i>Sales</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="report.html"><i class="fas fa-chart-line"></i>Report</a>
+            </li>
+            <li class="nav-item ml-md-5">
+                <a class="nav-link" href="user.html"><i class="fas fa-user-circle"></i>User</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-sign-out-alt"></i></a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<article class="row mt-3 mb-5 mr-3 ml-3 ">
+    <section id="order" class="col-md-6 p-4">
+        <div class="bg-light text-white row ml-0">
+            <div class="col-10 overflow">
+                <span class="category">
+                    <span class="btn-secondary btn mt-2 text-white border-success">01</span>
+                </span>
+            </div>
+            <div class="col-2 mr-0 p-0">
+                <button class="btn-secondary btn-lg text-white border-info">+</button>
+                <button class="btn-secondary btn-lg text-white border-danger">-</button>
+            </div>
+        </div>
+
+        <div class="row mt-4 p-0">
+            <div class="col-sm-8">
+                <h1>Choose Client</h1>
+            </div>
+            <div class="col-sm-4 m-auto text-center">
+                <div id="add-customer" class="btn btn-secondary col-sm-6  rounded" data-toggle="tooltip"
+                     data-placement="top" title="Add New Customer">
+                    <i class="fa fa-user-plus fa-lg"></i>
+                </div>
+            </div>
+            <select id="customer" class="m-auto col-11" autocomplete="on" name="customers">
+                <option value="C000">Walk in Customer</option>
+                <option value="C001">Udith Dilshan</option>
+                <option value="C002">Udara Deshan</option>
+                <option value="C003">Supun Udara</option>
+                <option value="C004">Pasindu Supun</option>
+                <option value="C005">Supun Dilshan</option>
+            </select>
+            <div class="row col-12 p-0 mt-3 mr-0 ml-0 text-center">
+                <h5 class="col-5">Product</h5>
+                <h5 class="col-2">Price (Rs.)</h5>
+                <h5 class="col-3">Quantity</h5>
+                <h5 class="col-2">Total (Rs.)</h5>
+            </div>
+        </div>
+        <!--        Order Section-->
+        <div class="p-0 mt-3 font-weight-bold margin1 ">
+            <div class="col row p-0 mt-3 m-0">
+                <a class="col-1 btn btn-secondary btn-sm m-auto">
+                    <i class="fas fa-times-circle text-danger"></i>
+                </a>
+                <span class="col-4 text-center  ">Product 1</span>
+                <span class="col-2 text-center m-auto">$$$$</span>
+                <span class="col-3 text-center p-0 align-items-center m-auto">
+                    <a class="btn btn-secondary btn-sm ">
+                        <i class="fas fa-minus text-danger"></i>
+                    </a>
+                    <span>
+                        <input type="number" min="1" class="arrow-remove col-6 m-auto" placeholder="N/A">
+                    </span>
+                    <a class="btn btn-secondary btn-sm m-auto">
+                        <i class="fas fa-plus text-info"></i>
+                    </a>
+
+                </span>
+                <span class="col-2 text-center m-auto">$$$$</span>
+            </div>
+            <div class="col row p-0 mt-3 m-0 bg-light">
+                <a class="col-1 btn btn-secondary btn-sm m-auto ">
+                    <i class="fas fa-times-circle text-danger"></i>
+                </a>
+                <span class="col-4 text-center  ">Product 2</span>
+                <span class="col-2 text-center m-auto">$$$$</span>
+                <span class="col-3 text-center p-0 align-items-center m-auto">
+                    <a class="btn btn-secondary btn-sm ">
+                        <i class="fas fa-minus text-danger"></i>
+                    </a>
+                    <span>
+                        <input type="number" min="1" class="arrow-remove col-4 m-auto 0" placeholder="N/A">                    </span>
+                    <a class="btn btn-secondary btn-sm m-auto">
+                        <i class="fas fa-plus text-info"></i>
+                    </a>
+                    <span class="m-auto">Kg</span>
+                </span>
+                <span class="col-2 text-center m-auto">$$$$</span>
+            </div>
+        </div>
+        <!--        Payment Section-->
+        <div class="col mt-5 m-0 p-0">
+            <hr class="m-0">
+            <div class="m-0 col p-2 row">
+                <h6 class="col-6">Sub Total</h6>
+                <h5 class="col-4">$$$$$</h5>
+                <h6 class="col-2">N Items</h6>
+            </div>
+            <hr class="m-0">
+            <div class="m-0 col p-2 row">
+                <h6 class="col-6">Order TAX</h6>
+                <span class="col-4">
+                    <input type="number" min="1" class="arrow-remove col-10 m-auto 0" placeholder="N/A">
+                </span>
+                <h6 class="col-2">N/A</h6>
+            </div>
+            <hr class="m-0">
+            <div class="m-0 col p-2 row">
+                <h6 class="col-6">Discount</h6>
+                <span class="col-4">
+                    <input type="number" min="1" class="arrow-remove col-10 m-auto 0" placeholder="N/A">
+                </span>
+                <h6 class="col-2">N/A</h6>
+            </div>
+            <hr class="m-0">
+            <div class="m-0 col p-2 row">
+                <h5 class="col-6">Total</h5>
+                <h5 class="col-6">$$$$$</h5>
+            </div>
+            <div class="container col mt-3 p-0">
+                <button id="cancel_order" class="col-4 btn btn-lg btn-danger text-white">Cancel</button>
+                <button id="order_payment" class="col-4 btn btn-lg btn-success text-white">Payment</button>
+            </div>
+        </div>
+
+    </section>
+    <section id="inventory" class="col-md-6 p-4">
+        <div class="bg-light text-white row">
+            <span class=" btn-secondary btn text-white border-info mb-3 "><i class="fa fa-warehouse"></i></span>
+            <div class="col-11 overflow">
+                <span class="category ">
+                    <span class="btn-secondary btn text-white border-primary">Computer & Accessories</span>
+                    <span class="btn-secondary btn text-white border-primary">Cell Phone & Accessories</span>
+                    <span class="btn-secondary btn text-white border-primary">Food</span>
+                    <span class="btn-secondary btn text-white border-primary">Gift</span>
+                    <span class="btn-secondary btn text-white border-primary">School Stationery</span>
+                    <span class="btn-secondary btn text-white border-primary">Toys</span>
+                    <span class="btn-secondary btn text-white border-primary">Other</span>
+                </span>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <form id="form" class="form-inline ml-1 ">
+                <input id="search" class="form-control mr-2 " type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success ml-3" type="submit">Search</button>
+            </form>
+        </div>
+
+        <div id="items " class="row mt-4 text-center ">
+            <div class="col-md-3 col mb-2 p-0 btn btn-outline-info">
+                <img class="product" src="img/Computer_&_Accessories.webp" alt="Computer_&_Accessories">
+                <p>Computer Parts</p>
+            </div>
+            <div class="col-md-3 col-4 mb-2 p-0  btn btn-outline-info">
+                <img class="product" src="img/Cell_Phone_&_Accessories.webp" alt="i-Phone">
+                <p>i-Phone</p>
+            </div>
+            <div class="col-md-3 col-4 mb-2 p-0 btn btn-outline-info">
+                <img class="product" src="img/food.webp" alt="Tacos">
+                <p>Tacos</p>
+            </div>
+            <div class="col-md-3 col-4 mb-2 p-0 btn btn-outline-info">
+                <img class="product" src="img/gift.webp" alt="Gift">
+                <p>Gift</p>
+            </div>
+
+            <div class="col-md-3 col-4 mb-2 p-0 btn btn-outline-info">
+                <img class="product" src="img/School_Stationery.webp" alt="School_Stationery">
+                <p>School Stationery</p>
+            </div>
+
+            <div class="col-md-3 col-4 mb-2 p-0 btn btn-outline-info">
+                <img class="product" src="img/toys.webp" alt="Toys">
+                <p>Toys</p>
+            </div>
+        </div>
+    </section>
+</article>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

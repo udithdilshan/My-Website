@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PoS Customer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0e2ab26231.js" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" sizes="64x64" href="img/pos-terminal.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navigation-bar.css">
+
+</head>
+<body>
+
+<header class="navbar navbar-expand-md bg-light navbar-light">
+    <a class="navbar-brand ml-5" href="pos.html"><img id="logo" src="img/pos-terminal.svg" alt=""></a>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#menu"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <nav class="ml-auto colllapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ml-auto mr-5 nav_font">
+            <li class="nav-item">
+                <a class="nav-link " href="pos.html"><i class="fas fa-tachometer-alt"></i>POS</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="people-dropdown" data-toggle="dropdown"><i
+                        class="fas fa-users"></i>People</a>
+                <div class="dropdown-menu bg-light nav_font " aria-labelledby="people-dropdown">
+                    <a class="dropdown-item active" href="customer.html"><i class="fas fa-user-alt"></i>Customer</a>
+                    <a class="dropdown-item " href="supplier.html"><i class="fas fa-truck-moving"></i>Supplier</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="inventory.html"><i class="fas fa-warehouse"></i>Inventory</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sales.html"><i class="far fa-money-bill-alt"></i></i>Sales</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="report.html"><i class="fas fa-chart-line"></i>Report</a>
+            </li>
+            <li class="nav-item ml-md-5">
+                <a class="nav-link" href="user.html"><i class="fas fa-user-circle"></i>User</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-sign-out-alt"></i></a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container-fluid col-11 mt-4">
+
+    <div class="container-fluid mb-3">
+        <h2 class="">Customer Form</h2>
+    </div>
+    <form action="#" class="mt-5">
+        <div class="form-group">
+            <div class="col-md-6 p-0">
+                <label for="cId">Customer ID</label>
+                <input type="text" class="form-control" id="cId" aria-describedby="Customer ID">
+            </div>
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="Name">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" aria-describedby="Address">
+            <div class="p-0">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" aria-describedby="Address">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <label for="phoneNo">Phone No</label>
+                    <input type="number" class="arrow-remove-form form-control" id="phoneNo"
+                           aria-describedby="Phone_No">
+                </div>
+                <div class="col">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="Phone_No">
+                </div>
+            </div>
+
+        </div>
+        <div class="col-3 p-0">
+            <label for="discount">Discount</label>
+            <input type="number" class="arrow-remove-form form-control" placeholder="N/A" id="discount"
+                   aria-describedby="Discount">
+        </div>
+        <div class="d-flex flex-row mt-4">
+            <input type="button" class="btn btn-danger" value="Clear All">
+            <input type="button" class="ml-auto btn btn-success" value="Save Customer">
+        </div>
+    </form>
+</div>
+<nav class="navbar mt-5">
+    <form class="form-inline row ml-auto mr-5">
+        <input class="form-control mr-lg-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</nav>
+<div class="container-fluid text-secondary">
+    <span class="ml-5">Show</span>
+    <span>
+        <select name="rows" class="text-secondary" id="row-count">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+    </span>
+    <span>entries</span>
+</div>
+
+<div class="container-fluid mt-5">
+    <table class="table table-striped table-light table-hover table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Customer ID</th>
+            <th scope="col">Customer Name</th>
+            <th scope="col">Phone No</th>
+            <th scope="col">Address</th>
+            <th scope="col">City</th>
+            <th scope="col">Email</th>
+            <th scope="col">Discount</th>
+            <th scope="col">Created At</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>C001</td>
+            <td>Udith Dilshan</td>
+            <td>0771807833</td>
+            <td>No.91,Paranathanayamgoda,Mapalagama.</td>
+            <td>Galle</td>
+            <td>udithdilshan99@gmail.com</td>
+            <td>5%</td>
+            <td>2020.09.06 10:32:20</td>
+            <td class="pl-1 pr-1">
+                <div class="p-0 m-0">
+                    <span class="btn btn-sm btn-success"><i class="fas fa fa-pencil"></i></span>
+                    <span class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>C002</td>
+            <td>Udara Deshan</td>
+            <td>0771242345</td>
+            <td>No.12,Paranathanayamgoda,Mapalagama.</td>
+            <td>Galle</td>
+            <td>udara@gmail.com</td>
+            <td></td>
+            <td>2020.09.7 08:12:20</td>
+            <td class="pl-1 pr-1">
+                <div class="p-0 m-0">
+                    <span class="btn btn-sm btn-success"><i class="fas fa fa-pencil"></i></span>
+                    <span class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>C003</td>
+            <td>Supun Udara</td>
+            <td>0761442345</td>
+            <td>No.12/2,Polpalaketiya,Niyagama.</td>
+            <td>Galle</td>
+            <td>supunudara@gmail.com</td>
+            <td>7%</td>
+            <td>2020.09.7 09:16:20</td>
+            <td class="pl-1 pr-1">
+                <div class="p-0 m-0">
+                    <span class="btn btn-sm btn-success"><i class="fas fa fa-pencil"></i></span>
+                    <span class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>C004</td>
+            <td>Pasindu Supun</td>
+            <td>0711734345</td>
+            <td>"Sudu",No.76,Porawagama,mapalagama.</td>
+            <td>Galle</td>
+            <td>pasindusupun@gmail.com</td>
+            <td>8%</td>
+            <td>2020.09.8 12:25:56</td>
+            <td class="pl-1 pr-1">
+                <div class="p-0 m-0">
+                    <span class="btn btn-sm btn-success"><i class="fas fa fa-pencil"></i></span>
+                    <span class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>C005</td>
+            <td>Supun Dilshan</td>
+            <td>0789518203</td>
+            <td>"Supun",No.45/1,Habaraduwa.</td>
+            <td>Galle</td>
+            <td>supundilshan@gmail.com</td>
+            <td>4%</td>
+            <td>2020.09.9 1:45:34</td>
+            <td class="pl-1 pr-1">
+                <div class="p-0 m-0">
+                    <span class="btn btn-sm btn-success"><i class="fas fa fa-pencil"></i></span>
+                    <span class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></span>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<nav class="row m-3" aria-label="Page navigation example">
+    <span class="ml-3">Showing 1 to N entries</span>
+    <span class="ml-auto mr-3">
+    <ul class="pagination ">
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+</span>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
