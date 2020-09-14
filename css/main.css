@@ -629,6 +629,10 @@ footer {
     width: fit-content;
 }
 
+#links a{
+    text-decoration: none;
+}
+
 #links a img {
     width: 3.5%;
     margin: 0 3%;
@@ -645,5 +649,5 @@ footer {
 }
 
 #copy p a {
-    color: #e0ebe8;
+    color: #000000;
 }
